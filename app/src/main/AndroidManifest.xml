@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.divakar.vigilvisor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity_HOD">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.LoginActivity_HOD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            >
+        </activity>
+        <activity android:name=".LoginActivitystudent">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.LoginActivitystudent" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            >
+        </activity>
+        <activity android:name=".LoginActivityTeacher">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.LoginActivityTeacher" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StudentConfirmActivity">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.StudentConfirmActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Success">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.Success" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Teacher_menu">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.Teacher_menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Student_Attendance"
+            android:label="@string/title_activity_student__attendance"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.Student_Attendance" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".createquizz">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.createquizz" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Student_quiz_attempt">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.createquizz" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".createpoll">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.createpoll" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".student_poll">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.student_poll" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Student_menu">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.Student_menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".QuizScore">
+            <intent-filter>
+                <action android:name="com.example.divakar.vigilvisor.QuizScore" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+
+        </activity>
+    </application>
+
+</manifest>
